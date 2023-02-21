@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.title {
+  color: white;
+  width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px rgb(183, 30, 99);
+}
+
+.pw_container {
+  max-width: max-content;
+  padding: 0 5px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 25px;
+  background-color: rgb(183, 30, 99);
+}
+
+.head_title {
+  padding: 15px;
+  color: white;
+}
+
+.blink {
+  height: 8px;
+  width: 30px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 350px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
